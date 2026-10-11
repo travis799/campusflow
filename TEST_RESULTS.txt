@@ -1,0 +1,30 @@
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+test_malformed_json_raises_clear_error (test_storage.StorageTests.test_malformed_json_raises_clear_error) ... ok
+test_missing_file_starts_empty (test_storage.StorageTests.test_missing_file_starts_empty) ... ok
+test_save_and_reload (test_storage.StorageTests.test_save_and_reload) ... ok
+test_blank_title_is_rejected (test_tickets.TicketTests.test_blank_title_is_rejected) ... ok
+test_category_is_normalized (test_tickets.TicketTests.test_category_is_normalized) ... ok
+test_high_urgency_and_many_users_is_critical (test_tickets.TicketTests.test_high_urgency_and_many_users_is_critical) ... ok
+test_high_urgency_is_high (test_tickets.TicketTests.test_high_urgency_is_high) ... ok
+test_ids_are_unique (test_tickets.TicketTests.test_ids_are_unique) ... ok
+test_one_low_urgency_user_is_low (test_tickets.TicketTests.test_one_low_urgency_user_is_low) ... ok
+test_three_users_is_medium (test_tickets.TicketTests.test_three_users_is_medium) ... ok
+test_zero_users_is_rejected (test_tickets.TicketTests.test_zero_users_is_rejected) ... ok
+test_assigned_ticket_can_progress_and_resolve (test_workflow.WorkflowTests.test_assigned_ticket_can_progress_and_resolve) ... ok
+test_queue_orders_priority (test_workflow.WorkflowTests.test_queue_orders_priority) ... ok
+test_unassigned_ticket_cannot_start (test_workflow.WorkflowTests.test_unassigned_ticket_cannot_start) ... ok
+test_unknown_ticket_is_rejected (test_workflow.WorkflowTests.test_unknown_ticket_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.001s
+
+OK
